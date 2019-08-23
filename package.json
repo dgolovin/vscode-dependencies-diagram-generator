@@ -8,9 +8,10 @@
 	"repository": {
 		"url": "https://github.com/dgolovin/vscode-dependencies-diagram-generator"
 	},
+	"icon": "images/extension.png",
 	"displayName": "Dependencies Diagram Generator",
 	"description": "Generate dependencies diagram image for TypeScript modules",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.37.0"
 	},
@@ -25,7 +26,8 @@
 		"commands": [
 			{
 				"command": "dependencies-diagram-generator.generate.diagram",
-				"title": "Create Dependencies Diagram Image"
+				"title": "Create Dependencies Diagram Image",
+				"category": "Diagrams"
 			}
 		],
 		"menus": {

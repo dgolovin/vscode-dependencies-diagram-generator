@@ -4,11 +4,11 @@ Extension that uses [madge](https://github.com/pahen/madge) to generate dependen
 
 Extension reqisters command `` for folders in Explorer view.
 
-![ command ](images/feature-command.png)
+![ command ](https://raw.githubusercontent.com/dgolovin/vscode-dependencies-diagram-generator/v1.0.0/images/feature-command.png)
 
 It generates `dependencies.png` file in selected folder and opens it in editor.
 
-![ editor ](images/feature-editor.png)
+![ editor ](https://raw.githubusercontent.com/dgolovin/vscode-dependencies-diagram-generator/v1.0.0/images/feature-editor.png)
 
 ## Release Notes
 
