@@ -5,6 +5,9 @@
 		"email": "dgolovin@redhat.com",
 		"name": "Denis Golovin"
 	},
+	"repository": {
+		"url": "https://github.com/dgolovin/vscode-dependencies-diagram-generator"
+	},
 	"displayName": "Dependencies Diagram Generator",
 	"description": "Generate dependencies diagram image for TypeScript modules",
 	"version": "0.0.1",
