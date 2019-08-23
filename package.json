@@ -1,0 +1,64 @@
+{
+	"name": "dependencies-diagram-generator",
+	"publisher": "dgolovin",
+	"author": {
+		"email": "dgolovin@redhat.com",
+		"name": "Denis Golovin"
+	},
+	"displayName": "Dependencies Diagram Generator",
+	"description": "Generate dependencies diagram image for TypeScript modules",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.37.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:dependencies-diagram-generator.generate.diagram"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "dependencies-diagram-generator.generate.diagram",
+				"title": "Create Dependencies Diagram Image"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"when": "explorerResourceIsFolder",
+					"command": "dependencies-diagram-generator.generate.diagram"
+				}
+			],
+			"commandPalette": [
+				{
+					"command": "dependencies-diagram-generator.generate.diagram",
+					"when": "never"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.37.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"typescript": "^3.3.1",
+		"tslint": "^5.12.1",
+		"vscode-test": "^1.0.2"
+	},
+	"dependencies": {
+		"madge": "^3.4.4"
+	}
+}
