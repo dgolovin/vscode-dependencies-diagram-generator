@@ -64,6 +64,6 @@
 		"vscode-test": "^1.0.2"
 	},
 	"dependencies": {
-		"madge": "^3.4.4"
+		"madge": "^7.0.0"
 	}
 }
